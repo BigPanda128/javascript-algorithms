@@ -1,7 +1,7 @@
 var sort = require('./heapsort').heapSort;
 var nums = [];
-for (var i = 0; i < 100; ++i) {
-	 nums[i] = Math.floor(Math.random() * 101);
+for (var i = 0; i < 50; ++i) {
+	 nums[i] = Math.floor(Math.random() * 51);
 }
 
 function dispArr(arr) {
@@ -15,6 +15,8 @@ function dispArr(arr) {
 		   process.stdout.write("\n");
 		    }
 }
+console.log('unsorted array:');
 dispArr(nums);
 sort(nums);
+console.log('sorted array:');
 dispArr(nums);
