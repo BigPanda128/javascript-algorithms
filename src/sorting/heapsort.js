@@ -23,10 +23,12 @@
       var largest = index;
 
       if (left < heapSize && cmp(array[left], array[index]) > 0) {
+	      console.log("putting the larger number on left side: " + array[left]);
         largest = left;
       }
 
       if (right < heapSize && cmp(array[right], array[largest]) > 0) {
+	      console.log("putting the larger number on right side: " + array[right]);
         largest = right;
       }
 
