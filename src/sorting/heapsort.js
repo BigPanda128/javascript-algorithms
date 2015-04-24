@@ -23,17 +23,18 @@
       var largest = index;
 
       if (left < heapSize && cmp(array[left], array[index]) > 0) {
-	      console.log("swapping " + array[left] + ' and ' + array[index]);
+	      //console.log("swapping " + array[left] + ' and ' + array[index]);
         largest = left;
       }
 
       if (right < heapSize && cmp(array[right], array[largest]) > 0) {
-	      console.log('swapping ' + array[right] + ' and ' +  array[largest]);
+	      //console.log('swapping ' + array[right] + ' and ' +  array[largest]);
         largest = right;
       }
 
       if (largest !== index) {
         var temp = array[index];
+	console.log('swap ' + array[index] + ' and ' + array[largest]);
         array[index] = array[largest];
         array[largest] = temp;
         heapify(array, largest, heapSize, cmp);
