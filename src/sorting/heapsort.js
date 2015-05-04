@@ -2,7 +2,7 @@
   'use strict';
 
   function comparator(a, b) {
-    return a - b;
+    return b - a;
   }
 
   var heapSort = (function () {
@@ -34,6 +34,7 @@
 
       if (largest !== index) {
         var temp = array[index];
+	//here is the code that prints out what is being swaped.
 	console.log('swap ' + array[index] + ' and ' + array[largest]);
         array[index] = array[largest];
         array[largest] = temp;
