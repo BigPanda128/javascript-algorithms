@@ -1,6 +1,7 @@
 (function (exports) {
   'use strict';
 
+  //switchd this around so it prints out backward
   function comparator(a, b) {
     return b - a;
   }
